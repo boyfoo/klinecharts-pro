@@ -454,7 +454,7 @@ const ChartProComponent: Component<ChartProComponentProps> = (props) => {
       loading = true;
       setLoadingVisible(true);
       const get = async () => {
-        const [from, to] = adjustFromTo(p, new Date().getTime(), 500);
+        const [from, to] = adjustFromTo(p, new Date().getTime(), 200);
         const kLineDataList = await props.datafeed.getHistoryKLineData(
           s,
           p,
